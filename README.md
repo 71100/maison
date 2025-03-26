@@ -53,6 +53,79 @@ background-color: #e91e63;
         }
     </style>
 </head>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.product p {
+    margin: 0.5em 0;
+}
+
+.product .price {
+    color: #e91e63;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #d81b60;
+}
 <body>
     <header>
         <h1>Marketplace Futuriste</h1>
